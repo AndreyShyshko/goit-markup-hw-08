@@ -6,8 +6,17 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
 
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+
   &_header-margin {
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
   &_header-accent {
     color: #212121;
